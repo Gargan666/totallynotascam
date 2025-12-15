@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hope for Kids Africa</title>
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+
+<nav>
+<h1>Hope for Kids Africa</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#donate">Donate</a></li>
+</ul>
+</nav>
+
+
+<section id="home" class="hero">
+<h2>Education Changes Lives</h2>
+<p>Your support helps children in Africa access education.</p>
+<a href="#donate" class="cta">Donate Now</a>
+</section>
+
+
+<section id="about" class="content">
+<h2>Our Mission</h2>
+<p>
+We work to provide schools, books, and safe learning environments
+for children who lack access to education.
+</p>
+</section>
+
+
+<section class="content">
+<h2>Donation Goal</h2>
+<div class="progress-container">
+<div id="progress-bar">$0 Raised</div>
+</div>
+</section>
+
+
+<section id="donate" class="content">
+<h2>Make a Donation</h2>
+
+
+<div class="preset-buttons">
+<button data-amount="5">$5</button>
+<button data-amount="10">$10</button>
+<button data-amount="25">$25</button>
+<button data-amount="50">$50</button>
+</div>
+
+
+<form id="donationForm">
+<label for="name">Name</label>
+<input type="text" id="name" required>
+
+
+<label for="email">Email</label>
+<input type="email" id="email" required>
+
+
+<label for="amount">Donation Amount ($)</label>
+<input type="number" id="amount" min="1" required>
+
+
+<button type="submit">Donate & Spin</button>
+</form>
+
+
+<p id="message"></p>
+<p class="disclaimer">School project – no real payments.</p>
+</section>
+
+
+<!-- Wheel Modal -->
+<div id="wheelModal" class="wheel-modal">
+<div class="wheel-content">
+<h3>Thank You! Spin the Wheel 🎉</h3>
+<div class="wheel-container">
+<div class="pointer">▲</div>
+<div id="wheel"><span class="num n1">10</span><span class="num n2">20</span><span class="num n3">30</span><span class="num n4">40</span><span class="num n5">50</span><span class="num n6">100</span></div>
+</div>
+<button id="spinBtn">Spin</button>
+<p id="wheelResult"></p>
+<button class="close">Close</button>
+</div>
+</div>
+
+
+<footer>
+<p>© 2025 Hope for Kids Africa | Educational Project</p>
+</footer>
+
+
+</html><script src="test.js"></script>
+</body>

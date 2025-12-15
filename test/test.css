@@ -1,0 +1,78 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f4f6f8;
+}
+
+
+nav {
+display: flex;
+justify-content: space-between;
+padding: 15px 30px;
+background: #2c7be5;
+color: white;
+}
+
+
+nav ul {
+display: flex;
+gap: 20px;
+list-style: none;
+}
+
+
+nav a {
+color: white;
+text-decoration: none;
+}
+
+
+.hero {
+text-align: center;
+padding: 80px 20px;
+background: #2c7be5;
+color: white;
+}
+
+
+.cta {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 25px;
+background: white;
+color: #2c7be5;
+text-decoration: none;
+border-radius: 5px;
+}
+
+
+.content {
+max-width: 800px;
+margin: 40px auto;
+background: white;
+padding: 25px;
+border-radius: 8px;
+}
+
+
+.progress-container {
+background: #ddd;
+border-radius: 20px;
+overflow: hidden;
+}
+
+
+#progress-bar {
+width: 0%;
+height: 30px;
+background: #2c7be5;
+color: white;
+text-align: center;
+line-height: 30px;
+}
+
+
+.preset-buttons {
+display: flex;
+gap: 10px;
+}
