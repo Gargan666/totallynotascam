@@ -1,29 +1,10 @@
-section {
 
-}
-
-        .wheel {
+        #wheel {
             position: relative;
             width: 300px;
             height: 300px;
             margin: 50px auto;
-            border-radius: 50%;
-            background: -webkit-linear-gradient(-90deg, #f9dd62, #ec4e20);
-            background: linear-gradient(-90deg, #f9dd62, #ec4e20);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            animation: spin 3s ease-out;
-        }
-        .number {
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            font: bold 20px Arial, sans-serif;
-            color: #fff;
-            text-align: center;
-            line-height: 60px;
-            border-radius: 50%;
-            background-color: #333;
-            transform-origin: 50% 205px;
         }
         @keyframes spin {
             from { transform: rotate(0deg); }
