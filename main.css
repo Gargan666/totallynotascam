@@ -1,12 +1,83 @@
+.disabled { /* using this to hide things more effectively */
+visibility: hidden;
+}
+.fadeIn {
+animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
 
-        #wheel {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            margin: 50px auto;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
+#gamble-container {
+display: flex;
+position: relative;
+flex-direction: column;
+width: 400px;
+height: 450px;
+padding: 10px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+overflow: hidden;
+align-items: center;
+}
+#wheel-box {
+width: 300px;
+height: 300px;
+position: relative;
+margin: 20px;
+overflow: visible;
+border-radius: 100%;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+#wheel {
+width: 300px;
+height: 300px;
+transform-origin: 50% 50%;
+scale: 1.05; /* this is for if you want box shadow on wheel-box. makes it slightly bigger so there's no thin outline.*/
+}
+#spinBtn {
+width: 150px;
+height: 75px;
+}
+#winDot {
+position: absolute;
+z-index: 10;
+transform-origin: 50% 50%;
+width: 0;
+height: 0;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-top: 20px solid black;
+}
+
+#overlay {
+display: flex;
+flex-direction: column;
+overflow-wrap: break-word;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+object-fit: cover;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 100;
+align-items: center;
+
+color: white;
+font-size: 64px;
+font-weight: bold;
+font-family: sans-serif;
+text-align: center;
+}
+
+button {
+border-radius: 0;
+}
+button:hover {
+filter: brightness(0.9);
+}
